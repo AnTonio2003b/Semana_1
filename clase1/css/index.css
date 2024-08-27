@@ -1,0 +1,136 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/002/948/788/non_2x/pixel-minecraft-style-land-background-vector.jpg'); /* Añade aquí la ruta de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* La imagen permanece fija al hacer scroll */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background-color: #43a047; /* Verde principal */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffeb3b; /* Amarillo para el hover */
+}
+
+/* Sección Principal */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #e8f5e9; /* Verde muy claro */
+    border-radius: 8px;
+    margin: 140px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2e7d32; /* Verde oscuro */
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: 700;
+    color: #388e3c; /* Verde oscuro */
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 2px solid #4caf50; /* Verde principal */
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #388e3c; /* Verde oscuro */
+}
+
+form button {
+    background-color: #4caf50; /* Verde principal */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #388e3c; /* Verde oscuro */
+    transform: scale(1.05);
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #2e7d32; /* Verde muy oscuro */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+        /* Estilos internos para centrar la imagen */
+        .image-container {
+            text-align: center; /* Centra la imagen dentro del contenedor */
+            margin: 20px 0; /* Añade margen en la parte superior e inferior */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Asegura que la imagen no se desborde */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
